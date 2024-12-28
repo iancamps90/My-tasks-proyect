@@ -1,13 +1,23 @@
 
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import HomePage from './pages/HomePage'
+import TasksPage from './pages/TasksPage'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-   <h2>My tasks app</h2>
+
+    <Routes>
+      <Route path='/' element={<HomePage />} />
+      <Route path='/' element={<TasksPage />} />
 
 
+    </Routes>
+
+
+    
+    
   )
 }
 
