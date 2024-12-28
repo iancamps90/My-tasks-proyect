@@ -48,3 +48,17 @@ Actualmente, hay dos plugins oficiales disponibles para Vite con React:
 16. Verifica que todo funciona correctamente.
     
 17. Se actualiza el readme.
+
+18. en task page añadimos la logica
+    
+19. en task context se añaden las tareas.
+
+20. se crea task card para modificar las tareas 
+
+21. se da estilos a task card
+
+22. cambiamos estilos al index y al header
+
+23. se corigen errores del task, context no se podia modificar
+
+24.

@@ -10,7 +10,7 @@ function App() {
 
     <Routes>
       <Route path='/' element={<HomePage />} />
-      <Route path='/' element={<TasksPage />} />
+      <Route path='/tasks' element={<TasksPage />} />
 
 
     </Routes>
@@ -18,7 +18,7 @@ function App() {
 
     
     
-  )
+  );
 }
 
-export default App
+export default App;
