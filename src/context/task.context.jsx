@@ -1,17 +1,41 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useContext } from "react";
 
 const TaskContext = createContext();
 
 function TaskProviderWrapper(props) {
-    const [tasks, setTasks] = useState([
-        { id: "1", title: "Compra la cena", completed: false },
-        { id: "2", title: "Cocinar", completed: false },
-        { id: "3", title: "Cenar", completed: false },
-        { id: "4", title: "Lavar los platos", completed: false },
-    ]);
+    const [tasks, setTasks] = useState([]);
+    const [hasLoaded, setLoaded] = useState(false);
+    const [hasError, setError] = useState(false);
 
-    const addTask = (newTask) => { //funcion añadir nuevas tareas
-        setTasks([newTask, ...tasks]);
+    const API_URL = "https://ca9a4b517ef87c1e54b2.free.beeceptor.com/api/tasks/"; // VARIABLE DE URL DE LA API
+
+    // FUNCION LLAMADA A LA API y obtener las tareas
+    const getTasks = async () => {
+        if (hasLoaded) return;
+
+        try {
+            console.log("Get Tasks");
+            const response = await fetch(API_URL);
+            const data = await response.json();
+            setTasks(data.reverse());
+            setLoaded(true);
+            setError(false);
+        } catch (e) {
+            setError(true);
+        }
+    };
+
+    const addTask = async (newTask) => { //funcion añadir nuevas tareas
+        try {
+            await fetch(API_URL, {
+                method: "POST",
+                body: JSON.stringify(newTask)
+            })
+            setTasks([newTask, ...tasks]);
+            setError(false);
+        } catch (e) {
+            setError(true);
+        }
     };
 
 
@@ -26,7 +50,17 @@ function TaskProviderWrapper(props) {
     };
 
     return (
-        <TaskContext.Provider value={{ tasks, setTasks, updateTask, addTask }}>
+        <TaskContext.Provider value={
+            {
+                tasks,
+                setTasks,
+                updateTask,
+                addTask,
+                getTasks,
+                hasLoaded,
+                hasError
+            }
+        }>
             {props.children}
         </TaskContext.Provider>
     );

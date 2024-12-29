@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { TaskContext } from "../context/task.context";
 import "./CreateTask.css";
+import { createId } from "../utils/utils";
 
 
 function CreateTask() {
@@ -18,7 +19,7 @@ function CreateTask() {
         if (!taskTitle) return;
 
         const newTask = {
-            id: 123,
+            id: createId(),
             title: taskTitle,
             completed: false
         }

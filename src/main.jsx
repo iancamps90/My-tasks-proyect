@@ -8,7 +8,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { TaskProviderWrapper } from './context/task.context.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  // <StrictMode>
 
     <BrowserRouter>
       
@@ -19,5 +19,5 @@ createRoot(document.getElementById('root')).render(
     
     </BrowserRouter>
 
-  </StrictMode>,
+  // </StrictMode>,
 );

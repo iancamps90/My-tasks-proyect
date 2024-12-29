@@ -65,3 +65,8 @@ Mejoras Realizadas
 
 Desarrollado por Ian Camps. Este proyecto es parte de un aprendizaje práctico en React y Vite.
 
+1. LLAMAMOS A LA API DE BEECEPTOR. EN EL CONTEXTO
+2. se crean funciones en el contexto para obtener tareas de la api y añadir tareas.
+3. se crea carpeta y fichero utils para generar un numero aleatorio de id.
+4. se crean las funciones en utils para generar ids aleatorios.
+5. en create task se añade la funcion de utils

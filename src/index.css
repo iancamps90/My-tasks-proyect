@@ -5,15 +5,13 @@
 
 body {
     margin: 0;
-        min-height: 100vh;
-        background-color: #f4f7fb;
-        /* Color de fondo más suave que aliceblue */
-        color: #333;
-        /* Texto oscuro para mayor contraste */
-        display: flex;
-        flex-direction: column;
-        font-size: 16px;
-        line-height: 1.5;
+    min-height: 100vh;
+    background-color: #f4f7fb; /* Color de fondo suave */
+    color: #333; /* Contraste para el texto */
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 ul {
@@ -21,3 +19,4 @@ ul {
     padding: 0;
     list-style-type: none;
 }
+
