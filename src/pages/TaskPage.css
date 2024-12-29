@@ -1,0 +1,57 @@
+/* Estilo principal para el contenedor de la página */
+#tasks-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    /* Fondo claro */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra para el contenedor */
+}
+
+/* Título de la sección */
+#tasks-page .title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #343a40;
+    /* Gris oscuro */
+    margin-bottom: 20px;
+}
+
+/* Lista de tareas */
+#tasks-list {
+    background-image: url("../assets/cork6.jpg");
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Elementos de la lista */
+#tasks-list li {
+    margin-bottom: 15px;
+    /* Separación entre tareas */
+}
+
+/* Fondo alternado para las tareas */
+#tasks-list li:nth-child(even) {
+    background-color: #e9ecef;
+    /* Gris claro */
+    border-radius: 5px;
+}
+
+/* Estilo responsive */
+@media (max-width: 768px) {
+    #tasks-page {
+        padding: 15px;
+    }
+
+    #tasks-page .title {
+        font-size: 1.8rem;
+    }
+
+    #tasks-list li {
+        margin-bottom: 10px;
+    }
+}

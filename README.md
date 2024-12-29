@@ -1,64 +1,67 @@
-# React + Vite - Gestor de Tareas
 
-Este template proporciona una configuración mínima para empezar con React usando Vite, con soporte para Hot Module Replacement (HMR) y algunas reglas básicas de ESLint.
 
-Actualmente, hay dos plugins oficiales disponibles para Vite con React:
+## Gestor de Tareas con React + Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) usa [Babel](https://babeljs.io/) para Fast Refresh.
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) usa [SWC](https://swc.rs/) para Fast Refresh.
+Este proyecto es un gestor de tareas desarrollado con React y configurado con Vite para un rendimiento óptimo. Implementa un sistema de rutas, gestión de estado global mediante el contexto de React y estilos personalizados.
 
-## Pasos para crear el proyecto
+## Características del Proyecto
 
-1. **Crea la estructura e instala los paquetes** de la nueva aplicación web de gestor de tareas con Vite y React.
+    Framework: React, configurado con Vite para desarrollo rápido.
+    Rutas Dinámicas: Implementadas con react-router-dom para navegar entre páginas.
+    Gestión de Estado: Uso de Context API para manejar las tareas de manera global.
+    Componentes Reutilizables: Arquitectura basada en componentes para modularidad y escalabilidad.
+    Estilos Responsivos: Personalización de estilos con CSS.
+    Funcionalidades del Gestor de Tareas:
+        Listado de tareas.
+        Creación de nuevas tareas.
+        Visualización y personalización de cada tarea mediante componentes dedicados.
 
-2. Elimina todo lo que no necesitamos que importe Vite. Borra los archivos de ejemplo que no sean necesarios, como el logo.svg y otros archivos de prueba.
+## Guía de Instalación
 
-3. Crea las carpetas necesarias:
-
-    pages: Para las páginas de la aplicación.
-    components: Para los componentes reutilizables.
-
-4. Dentro de pages crea dos archivos:
-
-    Home.jsx: Página de inicio.
-    Tasks.jsx: Página para gestionar las tareas.
-
-5. Dentro de components crea el componente Header.jsx donde añadirás un nav con enlaces (Link) para navegar entre las páginas.
-
-6. Añade unos estilos básicos para el Header. Crea un archivo de estilo en styles/header.css y vincúlalo al Header.jsx.
+1. Clonar el repositorio.
+2. Instalar dependencias.
+3. Ejecutar el servidor de desarrollo.
+4. Abre tu navegador y ve a: http://localhost:5173.
    
-7. Incluye el archivo CSS que le da estilo al Header en el componente Header.jsx.
-   
-8. Añade el Header a la página Home.jsx.
-   
-9.  Añade el Header también a la página Tasks.jsx.
-    
-10. Configura las rutas en el componente raíz App.jsx.
-    
-11. Añade los enlaces de navegación en el componente Header.jsx (esto ya se cubrió en el paso 5).
 
-12. Añade BrowserRouter en main.jsx.
-    
-13. Crea la carpeta context para la lógica de la aplicación, y dentro de ella, crea el archivo task.context.js.
-    
-14. Importa el TaskProvider en main.jsx.
-    
-15. Añade la lógica de tareas en task.context.js. Ya está incluida en el paso 13.
+## Pasos de Desarrollo
 
-16. Verifica que todo funciona correctamente.
-    
-17. Se actualiza el readme.
+Configuración Inicial:
 
-18. en task page añadimos la logica
-    
-19. en task context se añaden las tareas.
+    Creación del proyecto con Vite y React.
+    Eliminación de archivos no necesarios.
+    Creación de carpetas:
+        pages/: Para las vistas principales.
+        components/: Para componentes reutilizables.
 
-20. se crea task card para modificar las tareas 
+Funcionalidades Implementadas:
 
-21. se da estilos a task card
+    1. Navegación:
+        Creación del componente Header.jsx con navegación entre Home y Tasks.
+        Configuración de rutas en App.jsx y uso de BrowserRouter en main.jsx.
+    2. Gestión de Tareas:
+        Creación del contexto en task.context.jsx para manejar tareas de forma global.
+        Provisión del contexto en main.jsx con TaskProvider.
+    3. Componentes:
+        TaskCard.jsx: Para mostrar cada tarea.
+        CreateTask.jsx: Para añadir nuevas tareas al contexto.
+    4. Estilos:
+        Personalización del diseño con CSS para Header, TaskCard y TasksPage.
 
-22. cambiamos estilos al index y al header
+Mejoras Realizadas
 
-23. se corigen errores del task, context no se podia modificar
+    Corrección de errores en la lógica del contexto.
+    Modularización del código para mantener escalabilidad.
+    Inclusión de comentarios explicativos en el código para facilitar el mantenimiento.
 
-24.
+## Próximos Pasos
+
+    1. Añadir funcionalidad para editar y eliminar tareas.
+    2. Implementar persistencia de datos con almacenamiento local o backend.
+    3. Mejorar la responsividad del diseño.
+    4. Implementar pruebas unitarias para los componentes principales.
+
+## Créditos
+
+Desarrollado por Ian Camps. Este proyecto es parte de un aprendizaje práctico en React y Vite.
+

@@ -10,6 +10,11 @@ function TaskProviderWrapper(props) {
         { id: "4", title: "Lavar los platos", completed: false },
     ]);
 
+    const addTask = (newTask) => { //funcion añadir nuevas tareas
+        setTasks([newTask, ...tasks]);
+    };
+
+
     const updateTask = (updatedTask) => {
         const updatedTasks = tasks.map((task) => {
             if (task.id !== updatedTask.id) {
@@ -21,7 +26,7 @@ function TaskProviderWrapper(props) {
     };
 
     return (
-        <TaskContext.Provider value={{ tasks, setTasks, updateTask }}>
+        <TaskContext.Provider value={{ tasks, setTasks, updateTask, addTask }}>
             {props.children}
         </TaskContext.Provider>
     );
