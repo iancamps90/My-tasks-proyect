@@ -69,4 +69,8 @@ Desarrollado por Ian Camps. Este proyecto es parte de un aprendizaje práctico e
 2. se crean funciones en el contexto para obtener tareas de la api y añadir tareas.
 3. se crea carpeta y fichero utils para generar un numero aleatorio de id.
 4. se crean las funciones en utils para generar ids aleatorios.
-5. en create task se añade la funcion de utils
+5. en create task se añade la funcion de utils.
+6. profundizando con hook, vamos a crear unos contadores luego crearemos custum cooks
+7. creamos un custom hook para las varibles de losmcontadores para que interactuen diferente
+8. creacion de un focus para el input 
+9. 
