@@ -1,20 +1,12 @@
 import React from 'react';
 import "./BuyProduct.css";
 import cup from '../assets/cup.jpg';
-import { useState } from 'react';
 
 
-function BuyCup() {
 
-    const [quantity, setQuantity] = useState(0);
+function BuyCup(props) {
 
-    const decrease = () => {
-        setQuantity(quantity - 1);
-    };
-
-    const increase = () => {
-        setQuantity(quantity + 1);
-    };
+    const { quantity, decrease, increase } = props;
 
     const buy = () => {
         console.log(`${quantity} tazas compradas`);

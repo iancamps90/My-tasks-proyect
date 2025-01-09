@@ -1,20 +1,11 @@
 import React from 'react';
 import "./BuyProduct.css";
 import TShirt from '../assets/TShirt.jpg';
-import { useState } from 'react';
 
 
-function BuyTShirt() {
+function BuyTShirt(props) {
 
-    const [quantity, setQuantity] = useState(0);
-
-    const decrease = () => {
-        setQuantity(quantity - 1);
-    };
-
-    const increase = () => {
-        setQuantity(quantity + 1);
-    };
+    const { quantity, decrease, increase } = props;
 
     const buy = () => {
         console.log(`${quantity} camisetas compradas`);

@@ -4,6 +4,8 @@ import HeaderComponent from "../components/HeaderComponent"
 import { TaskContext } from "../context/task.context";
 import TaskCard from "../components/TaskCard";
 import CreateTask from "../components/CreateTask";
+import CompoundFooter from "../components/CompoundFooter";
+
 
 
 
@@ -92,6 +94,22 @@ function TasksPage() {
                     )}
                 </ul>
             </section>
+
+            <CompoundFooter className="footer">
+
+                            <CompoundFooter.Title className="footer-title">
+                                Task App
+                            </CompoundFooter.Title>
+            
+                            <CompoundFooter.SocialMedia className="social-media">
+                                Facebook Instagram X
+                            </CompoundFooter.SocialMedia>
+            
+                            <CompoundFooter.Copyright className="copyright">
+                                ©  Task App
+                            </CompoundFooter.Copyright>
+            
+                        </CompoundFooter>
         </>
     );
 }

@@ -73,4 +73,14 @@ Desarrollado por Ian Camps. Este proyecto es parte de un aprendizaje práctico e
 6. profundizando con hook, vamos a crear unos contadores luego crearemos custum cooks
 7. creamos un custom hook para las varibles de losmcontadores para que interactuen diferente
 8. creacion de un focus para el input 
-9. 
+
+9- se crea en components una seccion de compras con un buycup y buythisrt tambien se le añade diseño
+10- se añade al home page
+11. creamos patrones avanzados hoc
+12. creamo carpeta hoc que va a envolver la pagina de los productos a vender 
+13. creamos productwrapper
+14. creamos un compound footer component
+15. le damos diseño al footer
+16. lo añadimos a la pagina home y a la task list
+17. añadimos react memo al task card para que lo renderice solo 1 vez
+18. 
