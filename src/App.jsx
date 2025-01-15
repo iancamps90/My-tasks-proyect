@@ -18,6 +18,7 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/tasks' element={<TasksPage />} />
+          <Route path='/My-tasks-proyect' element={<TasksPage />} />  {/* Nueva ruta agregada */}
         </Routes>
 
       </Suspense>
