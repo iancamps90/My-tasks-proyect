@@ -1,5 +1,5 @@
 import "./TaskCard.css";
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { TaskContext } from "../context/task.context";
 
 function TaskCard({ task }) {
@@ -23,4 +23,5 @@ function TaskCard({ task }) {
     );
 }
 
-export default TaskCard;
+export default React.memo(TaskCard);
+// exporta el componente pero lo memoriza

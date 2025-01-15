@@ -7,7 +7,7 @@
 }
 
 .task-title {
-    flex-grow: 1; /* Ocupa el espacio disponible */
+    flex-grow: 0.5; /* Ocupa el espacio disponible */
     padding: 10px;
     font-size: 16px;
     border: 2px solid #007BFF;
@@ -33,13 +33,11 @@
 }
 
 .create-btn:hover {
-    background-color: #218838;
-    /* Verde oscuro */
+    background-color: #218838; /* Verde oscuro */
 }
 
 .create-btn:active {
-    transform: scale(0.95);
-    /* Efecto de clic */
+    transform: scale(0.95);/* Efecto de clic */
 }
 
 @media (max-width: 768px) {
